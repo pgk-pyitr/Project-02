@@ -2,8 +2,16 @@ const searchButton = document.getElementById("searchButton");
 const searchInput = document.getElementById("searchInput");
 const imageGallery = document.getElementById("imageGallery");
 
-function fetchImages(query) {
-    const apiKey = 'd8UvN6xRkmGof81fM8r0ltx69FmtWMhE'
-   
+async function fetchImages(query) {
+    try {
+        const apiKey = 'd8UvN6xRkmGof81fM8r0ltx69FmtWMhE';
+        const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${query}`;
 
+        const response = await fetch(url);
+        const data = await response.json();
+
+        displayImages(data.data);
+    } catch (error) {
+        console.error('Failed to fetch images', error);
+        }
 }
