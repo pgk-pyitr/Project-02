@@ -15,3 +15,15 @@ async function fetchImages(query) {
         console.error('Failed to fetch images', error);
         }
 }
+
+function displayImages(images) {
+    imageGallery.innerHTML = '';
+
+    images.forEach(image => {
+        const imgElement = document.createElement("img");
+        imgElement.src = image.images.fixed_height.url;
+        imgElement.alt = image.title;
+        imageGallery.appendChild(imgElement);
+    });
+}
+
