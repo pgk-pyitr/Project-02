@@ -1,0 +1,60 @@
+@font-face{
+    font-family: 'myFirstFont';
+    src: url(/fonts/1up.ttf);
+}
+
+@font-face {
+    font-family: 'mySecondFont';
+    src: url(/fonts/Symtext.ttf);
+}
+
+body {
+    font-family: 'myFirstFont';
+    font-size: 30px;
+    color: purple;
+    background-color: yellowgreen;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-input {
+    padding: 12px;
+    width: 300px;
+    font-family: 'mySecondFont';
+    color: purple;
+    font-size: 18px;
+  }
+
+.search-button {
+    font-family: 'mySecondFont';
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: purple;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    
+}
+
+.search-button:active {
+    background-color: purple;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    
+}
+
+.search-button:hover {
+    background-color: black
+}
+
+.image-gallery {
+    padding: 70px;
+}
+
