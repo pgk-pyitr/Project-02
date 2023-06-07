@@ -12,7 +12,7 @@ body {
     font-family: 'myFirstFont';
     font-size: 30px;
     color: purple;
-    background-color: yellowgreen;
+    background-color: beige
 }
 
 .container {
@@ -24,8 +24,9 @@ body {
     padding: 12px;
     width: 300px;
     font-family: 'mySecondFont';
-    color: purple;
+    color: black;
     font-size: 18px;
+    border-radius: 10px;
   }
 
 .search-button {
@@ -46,7 +47,7 @@ body {
 .search-button:active {
     background-color: purple;
     box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    transform: translatey(4px);
     
 }
 
@@ -56,5 +57,11 @@ body {
 
 .image-gallery {
     padding: 70px;
+    object-fit: cover;
 }
 
+.footer-1 {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+}
