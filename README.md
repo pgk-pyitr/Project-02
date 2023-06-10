@@ -5,6 +5,7 @@
 - .html , .css, .js
 - Create a "Most searched" tab; 
 Adding a log in to save your recent searches;
+Add a 'trending' page.
 
 
 
