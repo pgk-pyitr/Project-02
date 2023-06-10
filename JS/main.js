@@ -48,4 +48,5 @@ async function searchImages() {
     if (searchTerm !== '') {
       await fetchImages(searchTerm);
     }
-  }
+}
+

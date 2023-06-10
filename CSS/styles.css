@@ -58,10 +58,24 @@ body {
 .image-gallery {
     padding: 70px;
     object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-1 {
     padding: 10px 10px 10px 10px;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+      margin-top: 40px;
+    }
+  
+    .search-input {
+      width: 80%;
+      max-width: 300px;
+    }
 }
